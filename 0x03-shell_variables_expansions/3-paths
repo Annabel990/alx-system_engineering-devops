@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l | grep ^d | wc -l 
+$((`tr -dc : <<<"$PATH" | wc -c`+1))
